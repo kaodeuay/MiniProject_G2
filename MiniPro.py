@@ -17,11 +17,11 @@ st.sidebar.subheader('Please enter your data:')
 
 def get_input():
     # Display widgets and store their values in variables
-    v_AcademicYear = st.sidebar.radio('Year', ['2562', '2563'])
+    v_AcademicYear = st.sidebar.radio('AcademicYear', ['2562', '2563'])
     v_TCAS = st.sidebar.radio('TCAS Round', ['1', '2', '5'])
     v_GPAX = st.sidebar.slider('GPAX', 0.00, 4.00, 0.10)
-    v_Sex = st.sidebar.radio('Radio', ['Male', 'Female'])
-    v_SchoolRegionNameEng = st.sidebar.selectbox('Select', ['Foreign', 'Northern', 'Northeast', 'Southern', 'Central',
+    v_Sex = st.sidebar.radio('Sex', ['Male', 'Female'])
+    v_SchoolRegionNameEng = st.sidebar.selectbox('SchoolRegionNameEng', ['Foreign', 'Northern', 'Northeast', 'Southern', 'Central',
        'Eastern', 'Western'])
     v_Q1 = st.sidebar.radio('Q1', ['Yes', 'No'])
     v_Q2 = st.sidebar.radio('Q2', ['Yes', 'No'])
